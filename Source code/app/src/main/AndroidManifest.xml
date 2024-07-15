@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BTLAuction"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivityfavotites"
+            android:exported="false"
+            android:theme="@style/LauncherTheme"/>
+        <activity
+            android:name=".MainActivityWallet"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityEditAuction"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivityMyAuction"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".DetailProfile"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivitySearch"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivity4"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivity5"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivityLogin"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:noHistory="true"
+            android:theme="@style/LauncherTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivityLogin1"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivityDKI"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivityGmail"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivityResetPass"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProfile"
+            android:exported="false"
+            android:theme="@style/LauncherTheme" />
+    </application>
+
+</manifest>

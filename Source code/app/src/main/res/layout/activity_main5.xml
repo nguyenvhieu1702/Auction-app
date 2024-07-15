@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_cloudnight"
+    tools:context=".MainActivity5">
+
+  <LinearLayout
+      android:id="@+id/linearLayout3"
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:gravity="center|left"
+      android:orientation="horizontal"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+    <ImageButton
+        android:id="@+id/back_activity5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back" />
+
+    <TextView
+        android:layout_width="204dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center|left"
+        android:text="Đoạn Chat"
+        android:textColor="#535353"
+        android:textSize="20dp" />
+  </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_weight="1"
+      android:layout_height="0dp"
+      android:layout_marginBottom="1dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="650dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="50dp">
+
+      <SearchView
+          android:id="@+id/searchView"
+          android:layout_width="350dp"
+          android:layout_height="50dp"
+          android:layout_marginStart="30dp"
+          android:layout_marginTop="14dp"
+          android:layout_marginEnd="30dp"
+          android:background="@drawable/botron_edittext"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+      <LinearLayout
+          android:layout_margin="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="90dp"
+          android:gravity="center|left"
+          android:background="@drawable/botron_nutchat"
+          android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/avatar"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center|left">
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="30dp"
+              android:gravity="center|left"
+              android:textSize="18dp"
+              android:textStyle="bold"
+              android:text="Nguyễn Trần Đình Quân "/>
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="20dp"
+              android:gravity="center|left"
+              android:text="Tao trả 200 nghìn bán thì mua "/>
+        </LinearLayout>
+
+
+      </LinearLayout>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</LinearLayout>

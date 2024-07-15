@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="8dp"
+        card_view:cardElevation="8dp"
+        android:background="@drawable/shape">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:text="Cập nhật thông tin"
+                android:textStyle="bold"
+                android:textSize="25dp"/>
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="139dp"
+                android:layout_gravity="center"
+                android:src="@drawable/update1" />
+            <TextView
+                android:id="@+id/userWinner_dialogUserwinner"
+                android:gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:text="Xin lỗi vì bất tiện này ! "/>
+            <TextView
+                android:gravity="center"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:textSize="15dp"
+                android:text="Vui lòng bạn cập nhật thông tin để đảm bảo quyền lợi."/>
+            <Button
+                android:id="@+id/btnOke_dialogUpdateprofile"
+                android:gravity="center"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/gray1"
+                android:textColor="@color/black"
+                android:layout_marginBottom="20dp"
+                android:textSize="18dp"
+                android:text="Ok"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

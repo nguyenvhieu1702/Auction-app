@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_btn"
+        android:title="NHÀ"
+        android:icon="@drawable/home"/>
+    <item
+        android:id="@+id/bid_btn"
+        android:title="ĐẤU GIÁ"
+        android:icon="@drawable/hammerbid"/>
+    <item
+        android:id="@+id/add_btn"
+        android:title="THÊM"
+        android:icon="@drawable/add"/>
+    <item
+        android:id="@+id/chat_btn"
+        android:title="CHAT"
+        android:icon="@drawable/chat"/>
+    <item
+        android:id="@+id/profile_menu"
+        android:title="TÔI"
+        android:icon="@drawable/user"/>
+</menu>

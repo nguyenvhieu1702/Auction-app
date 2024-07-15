@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "8097986955",
+    "project_id": "btl-auction-73e6d",
+    "storage_bucket": "btl-auction-73e6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:8097986955:android:04a32579446b9e5bacd78e",
+        "android_client_info": {
+          "package_name": "com.example.btlauction"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "8097986955-tunc4tb06152pejhp4su0evnboh1t9do.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLY2MT7t_Q81kcDMzb1jWcO3SJFdkYuyo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "8097986955-tunc4tb06152pejhp4su0evnboh1t9do.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="190dp"
+        android:layout_height="400dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/botron_brand"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            card_view:cardCornerRadius="8dp"
+            card_view:cardElevation="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <ImageView
+                android:id="@+id/img_photoMyAuction"
+                android:layout_width="170dp"
+                android:layout_height="160dp"
+                android:scaleType="centerCrop"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:id="@+id/txt_nameMyAuction"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:textSize="17dp"
+            android:gravity="center|left"
+            android:textStyle="bold"
+            android:text="Luyến Trụ" />
+
+
+
+        <TextView
+            android:id="@+id/txt_priceMyAuction"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center|left"
+            android:text="Giá hiện tại: 450.000 vnd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center|left|top"
+            android:text="Thời gian kết thúc: " />
+
+        <TextView
+            android:id="@+id/txt_timeMyAuction"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center|left|top"
+            android:textStyle="bold"
+            android:text="Thời gian: 1:35:15 " />
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_shape"
+            android:id="@+id/button_MyAuction"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:textColor="@color/white"
+            android:text="Chỉnh sửa" />
+
+    </LinearLayout>
+
+</LinearLayout>

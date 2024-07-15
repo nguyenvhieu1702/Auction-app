@@ -1,0 +1,547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_cloudnight"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="520dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="529dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/miko"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="260dp"
+                        android:paddingLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/namePd_activity2"
+                                android:layout_width="255dp"
+                                android:layout_height="40dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Mô hình tĩnh"
+                                android:textColor="#050505"
+                                android:textSize="25dp" />
+
+                            <TextView
+                                android:layout_width="80dp"
+                                android:layout_height="40dp"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="Thời Gian"
+                                android:textColor="#535353"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:gravity="center|left"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:paddingLeft="5dp"
+                                android:id="@+id/price_activity2"
+                                android:layout_width="200dp"
+                                android:layout_height="50dp"
+                                android:fontFamily="sans-serif-medium"
+                                android:gravity="center|left"
+                                android:text="450.000 vnd"
+                                android:textColor="#050505"
+                                android:textSize="18dp" />
+
+                            <ImageButton
+                                android:id="@+id/btn_favorite_activity2"
+                                android:layout_gravity="center"
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:layout_margin="5dp"
+                                android:scaleType="centerCrop"
+                                android:background="@drawable/heart_empty"
+                                android:layout_marginRight="5dp"/>
+
+                            <LinearLayout
+                                android:layout_width="140dp"
+                                android:layout_height="50dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/hourInput_activity2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/botron_time"
+                                    android:gravity="center"
+                                    android:text="00"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="50dp"
+                                    android:gravity="center|top"
+                                    android:text=":"
+                                    android:textColor="#FA5586"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:id="@+id/minuteInput_activity2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/botron_time"
+                                    android:gravity="center"
+                                    android:text="00"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18dp" />
+
+                                <TextView
+                                    android:layout_width="10dp"
+                                    android:layout_height="50dp"
+                                    android:gravity="center|top"
+                                    android:text=":"
+                                    android:textColor="#FA5586"
+                                    android:textSize="30dp" />
+
+                                <TextView
+                                    android:id="@+id/secondInput_activity2"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:background="@drawable/botron_time"
+                                    android:gravity="center"
+                                    android:text="00"
+                                    android:textColor="#FFFFFF"
+                                    android:textSize="18dp" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:orientation="horizontal">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rcv_photo"
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:textSize="18dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:text="Mô tả:"/>
+                    <TextView
+                        android:id="@+id/describe_activity2"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:textSize="16dp"
+                        android:text="Mo hinh ty le 1:1 mowis nhat ha  nosi"/>
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="15dp"
+                    android:background="@drawable/botron_brand"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Đấu Giá"
+                            android:textColor="@color/black"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/bidPricePD_activity2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:textSize="18dp" />
+
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rcv_bidderBoard"
+                        android:layout_width="match_parent"
+                        android:layout_marginRight="10dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:gravity="center|left"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="25dp"
+                            android:text="Thông tin người bán:"
+                            android:textSize="18dp"
+                            />
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp">
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:id="@+id/avavtar_activity2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginTop="5dp"
+                            android:src="@drawable/miko"/>
+
+                        <LinearLayout
+                            android:layout_width="270dp"
+                            android:layout_height="60dp"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="60dp"
+                                android:layout_marginLeft="5dp"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/nameOwner_activity2"
+                                    android:layout_width="146dp"
+                                    android:layout_height="25dp"
+                                    android:text="Nguyễn Văn Hiếu"
+                                    android:textSize="18dp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageButton
+                            android:id="@+id/btn_favoriteOwner_activity2"
+                            android:layout_gravity="center"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:scaleType="centerCrop"
+                            android:background="@drawable/heart_empty"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginBottom="5dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                    card_view:cardCornerRadius="15dp"
+                    card_view:cardElevation="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="225dp"
+                    android:paddingLeft="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:text="Thông số kỹ thuật "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Studio"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/nameBrand_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="Bandai"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Tỷ lệ"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/scale_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="1:8"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Chất liệu"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/material_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="Resin"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Tình trạng"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/condition_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="No box"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Cân nặng"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/weight_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="800 gram"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="385dp"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="150dp"
+                            android:layout_height="30dp"
+                            android:text="Kích thước"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/dimension_activity2"
+                            android:layout_width="200dp"
+                            android:layout_height="30dp"
+                            android:text="40x45x45cm"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+        <ImageButton
+            android:id="@+id/back_activity2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/botron_brand"
+            android:padding="10dp"
+            android:src="@drawable/back"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/botron_bar"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="211dp"
+            android:layout_height="50dp"
+            android:background="@drawable/botron_bar"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/bidPut_activity2"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:background="@drawable/botron_nutchat"
+                android:textSize="15dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp">
+
+            <Button
+                android:id="@+id/buttonBid_activity2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FA5586"
+                android:textColor="@color/white"
+                android:text="Đấu Giá" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

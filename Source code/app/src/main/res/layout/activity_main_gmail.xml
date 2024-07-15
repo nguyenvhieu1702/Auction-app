@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityGmail">
+    <ImageButton
+        android:id="@+id/back_activityGmail"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="351dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/envelope"
+            android:layout_width="300dp"
+            android:layout_height="100dp" />
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:text="Quên mật khẩu?"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.25"/>
+        <TextView
+            android:layout_marginTop="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="Nhập gmail để khôi phục mật khẩu"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/quenmkEdit"
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:padding="10dp"
+            android:hint="Nhập gmail của bạn"
+            android:backgroundTint="@color/gray1"
+            android:background="@drawable/shape" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:id="@+id/btnConfirm3"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Xác nhận"
+            android:textSize="15dp"
+            android:background="@drawable/bg_shape"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

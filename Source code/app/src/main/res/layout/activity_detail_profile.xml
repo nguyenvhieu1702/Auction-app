@@ -1,0 +1,236 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/background_cloudnight"
+    android:gravity="center|top">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|left">
+
+        <ImageButton
+            android:id="@+id/back_activityDetailProfile"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:padding="15dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/botron_brand"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:text="Cập nhật thông tin chi tiết"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/avavtarChange_activityDetailProfile"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center|left"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+                android:textStyle="bold"
+                android:text="Ảnh đại diện"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ImageAvatar_activityDetailProfile"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:src="@drawable/miko"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/arrow_forward"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Email"
+                />
+
+            <EditText
+                android:id="@+id/email_activityDetailProfile"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/gray1"
+                android:paddingLeft="10dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Tên"
+                />
+
+            <EditText
+                android:id="@+id/name_activityDetailProfile"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/gray1"
+                android:paddingLeft="10dp"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Số điện thoại"
+                />
+            <EditText
+                android:id="@+id/phone_activityDetailProfile"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/gray1"
+                android:background="@drawable/shape"
+                android:layout_margin="10dp"
+                android:textSize="18dp"
+                android:paddingLeft="10dp" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Ngày sinh"
+                />
+
+            <EditText
+                android:id="@+id/birthday_activityDetailProfile"
+                android:layout_width="360dp"
+                android:layout_height="40dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape"
+                android:backgroundTint="@color/gray1"
+                android:hint=""
+                android:paddingLeft="10dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="Giới tính" />
+
+            <RadioGroup
+                android:id="@+id/radio_group_gender"
+                android:layout_width="380dp"
+                android:layout_height="40dp"
+                android:paddingLeft="10dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+
+                <RadioButton
+                    android:id="@+id/radio_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Nam" />
+
+                <RadioButton
+                    android:id="@+id/radio_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Nữ" />
+
+                <RadioButton
+                    android:id="@+id/radio_other"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="Khác" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonComfirm_activityDetailProfile"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_shape"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Xác nhận" />
+
+</LinearLayout>
